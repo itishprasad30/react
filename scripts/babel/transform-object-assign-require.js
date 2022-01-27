@@ -38,6 +38,7 @@ module.exports = function autoImporter(babel) {
           path.node.callee = id;
         }
       },
+      // file cheack from basic moving to use typescript in future 
 
       MemberExpression: function(path, file) {
         if (file.filename.indexOf('object-assign') !== -1) {
